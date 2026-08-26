@@ -24,7 +24,7 @@ Command used: nmap -sV 192.168.56.101
 
 Results: Identified 23 open ports, including the notoriously vulnerable vsftpd 2.3.4 service.
 
-![Nmap Scan](nmap_scan.png)
+![Nmap Scan](root_shell.png)
 
 ## Phase 2: Exploitation (Metasploit)
 I exploited the vsftpd 2.3.4 backdoor using the Metasploit Framework.
