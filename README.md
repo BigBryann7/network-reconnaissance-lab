@@ -39,4 +39,4 @@ set RHOSTS 192.168.56.101
 run
 Result: Successfully obtained a root shell on the target machine.
 
-![Root Shell](https://github.com/BigBryann7/network-reconnaissance-lab/blob/main/metasploit_success.png?raw=true)
+![Root Shell](metasploit_success.png)
